@@ -1,0 +1,55 @@
+/* button.module.css */
+
+.container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #0b693d;
+  color: #fff;
+  padding: 12px 40px;
+  font-family: axiforma;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 50px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  transition: width 0.3s ease;
+  z-index: -9;
+}
+
+.container:hover::before {
+  width: 100%;
+}
+
+.container:hover {
+  transform: translateY(5px);
+  color: #fff; /* Ensure the text color is set on hover */
+}
+
+
+/* @media screen and (max-width: 600px) {
+  .container {
+    text-align: center;
+    padding: 4px 4px 4px 20px;
+    gap: 10px;
+    align-items: center;
+  }
+  .arrow {
+    border-radius: 50px;
+    font-size: 22px;
+    padding: 4px 4px 2px 4px;
+    margin: 0;
+  }
+} */

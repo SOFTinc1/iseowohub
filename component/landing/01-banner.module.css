@@ -1,0 +1,134 @@
+.container {
+  width: 100%;
+  padding: 0 80px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 100px;
+}
+.left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.img1 {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  /* width: 200px;
+  height: 350px; */
+  /* background-color: #dff1ff; */
+}
+.leftFlex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.img2 {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  /* width: 200px;
+  height: 250px; */
+  /* background-color: #ffe1ed; */
+}
+.img3 {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  margin-top: 20px;
+  /* width: 200px;
+  height: 250px; */
+  /* background-color: #ffe8d9; */
+}
+/* ============================================ */
+.rightH2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: axiforma;
+  color: #0b693d;
+}
+.rightH1 {
+  margin: 20px 0 30px 0;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 42px;
+}
+.buttonDiv {
+  margin-top: 40px;
+}
+/* ==================================== */
+.leftGradient {
+  position: absolute;
+  left: -30%;
+  top: 40%;
+  bottom: 0;
+  width: 356.894px;
+  height: 356.894px;
+  transform: rotate(-56.737deg);
+  flex-shrink: 0;
+  border-radius: 356px;
+  opacity: 0.8;
+  background: #daefff;
+  filter: blur(150px);
+}
+.rightGradient {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  width: 356.894px;
+  height: 356.894px;
+  transform: rotate(-56.737deg);
+  flex-shrink: 0;
+  border-radius: 356.894px;
+  opacity: 0.8;
+  background: #d0ebff;
+  filter: blur(150px);
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .container {
+    padding: 0 80px;
+    margin-top: 20px;
+    display: block;
+  }
+  .left {
+    width: 100%;
+  }
+  .img1 {
+    width: 50%;
+    height: auto;
+  }
+  .img2 {
+    width: 100%;
+    height: auto;
+  }
+  .img3 {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+    margin-top: 20px;
+    display: block;
+  }
+  .left {
+    width: 100%;
+  }
+  .img1 {
+    width: 50%;
+    height: 300px;
+  }
+  .img2 {
+    width: 100%;
+    height: 250px;
+  }
+  .img3 {
+    width: 100%;
+    height: 250px;
+  }
+}
